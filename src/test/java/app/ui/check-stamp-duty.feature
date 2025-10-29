@@ -11,8 +11,8 @@ Feature: GUI Automation Demonstration - Task 2
     Then match driver.url == 'https://www.apps09.revenue.nsw.gov.au/erevenue/calculators/motorsimple.php'
 
     Given driver 'https://www.apps09.revenue.nsw.gov.au/erevenue/calculators/motorsimple.php'
-    And waitFor("//label[@for='passenger_Y']")
-    And submit().click("//label[@for='passenger_Y']")
+    And waitFor("//input[@id='passenger_Y']")
+    And submit().click("//input[@id='passenger_Y']")
     And input('input[name=purchasePrice]', '30000')
     When click("//button[@type='submit']")
     Then dialog(false)
