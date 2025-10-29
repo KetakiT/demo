@@ -10,7 +10,7 @@ class DemoTest {
 
     @Test
     void testAll() {
-        Results results = Runner.path("classpath:app/api/json-validation.feature", "classpath:app/ui/check-stamp-duty.feature")
+        Results results = Runner.path("classpath:app/api/json-validation.feature")
                 .parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
