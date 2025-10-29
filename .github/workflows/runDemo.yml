@@ -35,5 +35,5 @@ jobs:
 
       # Runs karate API and UI tests using Maven
       - name: Run API and UI tests
-        run: mvn clean install -Dtest=DemoTest
+        run: mvn -ntp clean install -Dtest=DemoTest
 
