@@ -14,13 +14,14 @@
         </encoder>
     </appender>    
    
-    <logger name="com.intuit" level="DEBUG"/>
-    <logger name="io.karatelabs" level="DEBUG"/>
+    <logger name="com.intuit" level="WARN"/>
+    <logger name="io.karatelabs" level="WARN"/>
     <logger name="io.netty" level="WARN"/>
-    <logger name="app" level="DEBUG"/>
+    <logger name="app" level="WARN"/>
+    <logger name="org.thymeleaf" level="OFF"/>
    
     <root level="warn">
-        <appender-ref ref="STDOUT" />
+        <!-- <appender-ref ref="STDOUT" /> -->    
         <appender-ref ref="FILE" />
     </root>
   

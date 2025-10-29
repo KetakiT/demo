@@ -1,7 +1,7 @@
 Feature: GUI Automation Demonstration - Task 2
 
   Background:
-    * configure driver = { type: 'chrome' }
+    * configure driver = { type: 'chrome', headless: true }
 
 @task2_gui
   Scenario: Calculate motor vehicle stamp duty on Revenue NSW website
