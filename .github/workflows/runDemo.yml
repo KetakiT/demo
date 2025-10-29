@@ -37,3 +37,12 @@ jobs:
       - name: Run API and UI tests
         run: mvn -ntp clean install -Dtest=DemoTest
 
+      # Publish test results
+      - name: Publish Test Report
+        uses: dorny/test-reporter@v1
+        if: always() # Ensure this step runs even if previous steps fail
+        with:
+          name: Karate Test Results
+          path: target/surefire-reports/*.xml # Adjust path to your JUnit XML reports
+          reporter: java-junit
+
