@@ -1,4 +1,4 @@
-Feature: API Automation Demonstration - Task 3
+Feature: API Automation Demonstration - Task 3 changed
 
 @task3_api
   Scenario: Fetch and validate author details from Open Library API
